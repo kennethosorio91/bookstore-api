@@ -47,6 +47,8 @@ app.delete('/api/books/:id', (req, res) => {
   const index = books.findIndex(b => b.id === bookId);
   if (index !== -1) {
     books.splice(index, 1);
+    // Reassign IDs to ensure they remain sequential
+    books = books.map((book, index) => ({ ...book, id: index + 1 }));
     res.json({ message: "Book deleted successfully", bookId });
   } else {
     res.status(404).json({ message: "Book not found" });
