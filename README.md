@@ -6,7 +6,7 @@ POST a new book entry
 PUT to update book details
 DELETE a book from the list
 
-The API is available at 'https://bookstore-api-cs23.onrender.com/'
+The API is available at https://bookstore-api-cs23.onrender.com/
 
 ## Endpoints ##
 
@@ -23,7 +23,7 @@ GET `/api/books/:bookId`
 Retrieve detailed information about a book.
 
 
-### Update a Book ###
+### Insert a New Book ###
 
 POST `/api/books`
 
@@ -54,7 +54,7 @@ Response
 ```
 
 
-### Update an order ###
+### Update a Book ###
 
 PATCH `/api/books/:bookID`
 
@@ -84,7 +84,7 @@ Result
 }
 ```
 
-### Delete an order ###
+### Delete a Book ###
 
 DELETE `/api/books/:bookID`
 
@@ -95,6 +95,23 @@ DELETE /api/book/2
 {
     "message": "Book deleted successfully",
     "bookId": 2
+}
+```
+### Generate an Authorization Token ###
+
+POST `/api-clients`
+
+Generate a token to access the API
+```
+Insert the clientName and clientEmail in JSON format in the request body.
+
+{
+    "clientName": "Kenneth P. Osorio",
+    "clientEmail": "osoriokenneth91@gmail.com"
+}
+
+{
+    "token": "bb585d8f42a79ccb701c4392bebaa36c"
 }
 ```
 
