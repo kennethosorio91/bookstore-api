@@ -67,6 +67,7 @@ app.put('/api/books/:id', authenticate, (req, res) => {
     book.name = name;
     book.author = author;
     book.type = type;
+    book.addedBy = req.client.clientName;
     res.json({ message: "Book updated successfully", book });
   } else {
     res.status(404).json({ message: "Book not found" });
