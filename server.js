@@ -4,8 +4,21 @@ const app = express();
 app.use(express.json());
 
 let books = [
-  { id: 1, name: "The Great Gatsby", author: "F. Scott Fitzgerald", type: "Fiction" },
-  { id: 2, name: "To Kill a Mockingbird", author: "Harper Lee", type: "Fiction" }
+  { id: 1, name: "The 48 Laws of Power", author: "Robert Greene", type: "Self-help Book", addedBy: "Felicity B. Rabago" },
+  { id: 2, name: "The Immortal Life of Henrietta Lacks", author: "Rebecca Skloot", type: "Non-Fiction", addedBy: "Felicity B. Rabago" },
+  { id: 3, name: "I Want to Die but I Want to Eat Tteokbokki", author: "Baek Sehee", type: "Non-Fiction", addedBy: "Felicity B. Rabago" },
+  { id: 4, name: "I Know Why the Caged Bird Sings", author: "Maya Angelou", type: "Non-Fiction", addedBy: "Felicity B. Rabago" },
+  { id: 5, name: "Nuclear War: A Scenario", author: "Annie Jacobsen", type: "Non-Fiction", addedBy: "Felicity B. Rabago" },
+  { id: 6, name: "The Alchemist", author: "Paulo Coelho", type: "Non-Fiction", addedBy: "Kenneth P. Osorio" },
+  { id: 7, name: "Meditations", author: "Marcus Aurelius", type: "Philosophy", addedBy: "Kenneth P. Osorio" },
+  { id: 8, name: "Crime and Punishment", author: "Fyodor Dostoevsky", type: "Fiction", addedBy: "Kenneth P. Osorio" },
+  { id: 9, name: "The Stranger", author: "Albert Camus", type: "Fiction", addedBy: "Kenneth P. Osorio" },
+  { id: 10, name: "White Nights", author: "Fyodor Dostoevsky", type: "Fiction", addedBy: "Kenneth P. Osorio" },
+  { id: 11, name: "Before the Coffee Gets Cold", author: "Toshikazu Kawaguchi", type: "Novel", addedBy: "Chelsy Kai Paralejas" },
+  { id: 12, name: "Sweet Bean Paste", author: "Tetsuya Akikawa", type: "Literary Fiction", addedBy: "Chelsy Kai Paralejas" },
+  { id: 13, name: "The Kamogawa Food Detectives", author: "Hisashi Kashiwai", type: "Urban Fiction", addedBy: "Chelsy Kai Paralejas" },
+  { id: 14, name: "Ego is the Enemy", author: "Ryan Holiday", type: "Self-help Book", addedBy: "Chelsy Kai Paralejas" },
+  { id: 15, name: "Deep Work", author: "Cal Newport", type: "Self-help Book", addedBy: "Chelsy Kai Paralejas" }
 ];
 
 let clients = [];
