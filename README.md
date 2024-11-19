@@ -106,8 +106,8 @@ Generate a token to access the API
 Insert the clientName and clientEmail in JSON format in the request body.
 
 {
-    "clientName": "Kenneth P. Osorio",
-    "clientEmail": "osoriokenneth91@gmail.com"
+    "clientName": "Test",
+    "clientEmail": "test@gmail.com"
 }
 
 {
